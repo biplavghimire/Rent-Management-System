@@ -1,0 +1,30 @@
+.edit{
+	text-align: center;
+	border: 5px solid red;
+	margin: 180px 300px;
+	padding: 100px;
+	background: orange;
+	color: whitesmoke;
+	border-radius: 100px;
+}
+
+.edit strong{
+	font-size: 30px;
+}
+.edit label{
+	font-size: 20px;
+	color: #888;
+}
+.edit input{
+	padding: 10px 50px;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: #00ad5f;
+	color: #fff;
+}
+.edit input:hover{
+	background-color: #333333;
+	color: #fff;
+}
+
+

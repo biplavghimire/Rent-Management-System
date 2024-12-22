@@ -1,0 +1,83 @@
+.container{
+	margin: 100px;
+}
+.container input{
+	max-width: 500px;
+}
+.container input[type=text] {
+  padding: 9px;
+  padding-right: 150px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: 1px solid #888;
+
+}
+
+.container .search-container button {
+
+  padding: 10px 10px;
+  margin-top: 8px;
+  margin-left: -5px;
+  margin-right: 16px;
+  background-color: #00ad5f;
+	color: #fff;
+  font-size: 17px;
+  border: none;
+  border-top-right-radius: 6px;
+  cursor: pointer;
+}
+.heading{
+	font-size: 24px;
+	text-transform: capitalize;
+}
+.font1{
+	font-size: 20px;
+	color: #666;
+}
+.font1 i{
+	padding-right: 15px;
+}
+.image img{
+	height: 400px;
+	width: 700px;
+}
+.image{
+	float: left;
+	padding: 50px 100px 0 0;
+}
+
+.info{
+
+	padding-top: 70px;
+	
+}
+.pad{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1rem;
+
+}
+
+.card-single{
+	
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 1rem;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+
+}
+.container button{
+	margin-top: 20px;
+	padding: 10px 50px;
+	background-color: #00ad5f;
+	color: #fff;
+	cursor: pointer;
+
+}
+.container button:hover{
+	background-color: #333333;
+	color: #fff;
+}

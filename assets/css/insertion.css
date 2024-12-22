@@ -1,0 +1,63 @@
+
+.insert{
+	margin-top: 85px;
+	margin-left: 100px;
+	min-height: calc(100vh - 90px);
+}
+
+
+.insert input[type="text"], input[type = "password"]{
+	display: block;
+	border-radius:10px;
+	padding: 5px 10px;
+	width:500px;
+	margin-top:15px;
+	text-transform: capitalize;
+	outline:0px;
+	font-size:12pt;
+}
+select{
+	display: block;
+	border-radius:10px;
+	padding: 5px 10px;
+	width:500px;
+	margin-top:15px;
+	text-transform: capitalize;
+	font-size:12pt;
+}
+
+.insert input[type="file"]{
+	border-radius:10px;
+	padding: 5px 0px;
+	width:500px;
+	margin-top:15px;
+	text-transform: capitalize;
+	font-size:12pt;
+}
+.insert input[type="submit"]{
+	background-color: #019875;
+	color: white;
+	text-transform: capitalize;
+	line-height: 1;
+	padding: 10px 15px;
+	outline: 0;
+	border-radius: 10px;
+	width:150px;
+	margin-bottom:20px;
+	cursor: pointer;
+	font-family: "Asap-Regular";
+	font-size: 14pt;
+	letter-spacing:1.2px;	
+}
+.insert h2{	
+	font-size:20pt;
+}
+
+
+
+
+
+
+
+
+

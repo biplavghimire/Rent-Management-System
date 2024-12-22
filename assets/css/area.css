@@ -1,0 +1,39 @@
+.both{
+	margin: 100px;
+}
+.img img{
+	width:300px;
+	height:200px;
+}
+.img{
+	width:50%;
+	float:left;
+	padding-left:20px;
+	
+
+}
+.content{
+	width:45%;
+	float:left;
+	
+}
+th{
+	text-align:left;
+	padding-right:50px;
+	text-transform:capitalize;
+}
+.content button{
+	background-color: #019875;
+	color: white;
+	text-transform: capitalize;
+	line-height: 1;
+	padding: 5px 15px;
+	outline: 0;
+	border-radius: 10px;
+	margin-bottom:20px;
+	cursor: pointer;
+	font-family: "Asap-Regular";
+	font-size: 14pt;
+	letter-spacing:1.2px;
+	margin-left: 600px;	
+}

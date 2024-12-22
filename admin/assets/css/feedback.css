@@ -1,0 +1,23 @@
+.mar table{
+	margin: 50px 100px;
+	border: none;
+}
+
+.mar table tr td{
+	padding: 10px 50px;
+	text-align: left;
+}
+.mar table tr th{
+		text-transform: capitalize;
+		text-align: left;
+	}
+
+@media (max-width: 500px){
+	.mar table{
+		margin: 50px 30px;
+		border: none;
+	}
+	.mar table tr td{
+		padding: 10px 20px;
+	}
+}

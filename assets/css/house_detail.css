@@ -1,0 +1,139 @@
+/*--------------header-------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.nav-bar{
+	background-color: #00ad5f;;
+}
+.logo{
+	float: left;
+	width: 30%;
+	color: #fff;
+	line-height: 50px;
+	font-size: 36px;
+	padding: 0 20px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#pad button{
+	background-color: #00ad5f;
+	color: #fff;
+}
+
+#pad button:hover{
+	background-color: #333333;
+	color: #fff;
+}
+
+.menu-right{
+	text-align: right;
+}
+#menu li a{
+	text-decoration: none;
+	color: #fff;
+
+
+}
+#menu li{
+	display: inline-block;
+	margin: 10px;
+
+}
+
+#menu #username{
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+
+#menu #username i{
+	font-size: 30px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+
+}
+
+#menu li a:hover{
+	background: #333333;
+
+	/*background: #c9f069;*/
+	/*color: #6c6e67;*/
+	color: #fff;
+	transition: 0.5s;
+	padding: 0 20px;
+}
+
+.search-wrapper{
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	width: 30%;
+	float: left;
+}
+
+	.search-wrapper span{
+		display: inline-block;
+		padding: 0rem 1rem;
+		font-size: 1rem;
+		color: #999;
+
+	}
+
+	.search-wrapper input{
+		height: 100%;
+		padding: .5rem;
+		border: none;
+		outline: none;
+	}
+/*-------------book text decoration--------------*/
+.book{
+	color: red;
+	border: 1px solid red;
+	text-align: center;
+	width: 150px;
+	padding: 5px;
+}
+/*----------------body css----------------*/
+.con{
+	margin: 5%;
+}
+.con table{
+	border-collapse: collapse;
+}
+.con table tr th{
+		text-align: left;
+		width: 200px;
+		padding-top: 20px;
+	}
+
+.con table tr td{
+	padding-top: 20px;
+	width: 400px;	
+}
+.con table tr #pad{
+	padding: 10px 10px 30px 0;
+	border-bottom: 1px solid #999;
+	
+}
+.con table tr td img{
+	height: 130px;
+	width: 200px;
+	padding-top: 20px;
+}
+.con table tr td button{
+	width: 150px;
+	padding: 5px;
+	cursor: pointer;
+}
+@media only and (max-width: 800px){
+	.con table tr th{
+		text-align: left;
+		width: 2%;
+		padding-top: 20px;
+	}	
+}

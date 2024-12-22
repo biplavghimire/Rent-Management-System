@@ -1,0 +1,50 @@
+
+tr th{
+	text-align: left;
+	padding: 5px 10px;
+}
+
+tr td{
+	text-align: left;
+	padding: 7px 10px;
+	border-bottom: 1px solid black;
+}
+
+table{
+	margin-left: 50px;
+	border-collapse: collapse;
+	
+}
+
+td button{
+	background:#00ad5f;
+	padding: 7px 20px;
+	
+	border: 0px none white;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+td button:hover{
+	background-color: #333333;
+}
+
+button i{
+	color: white;
+
+}
+
+@media (max-width: 800px){
+	table{
+		margin-left: 5px;
+	}
+	tr th{
+		padding: 5px 5px;
+	}
+
+	tr td{
+		padding: 3px 5px;
+	}
+}
+
+

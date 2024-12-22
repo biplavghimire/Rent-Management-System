@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: rgb(242, 233, 233);
+    background-position: center;
+    /*background:linear-gradient( rgba(0, 0, 0, 0.7) ),url("../images/registration.jpg");*/
+}
+
+.container {
+    margin: 10px 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    background:linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.5)100%),url("../images/registration.jpg");
+    background-size: cover;
+}
+
+.margin {
+    padding: 1px 0;
+}
+
+.form-box {
+    width: 500px;
+    background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url("../images/loginn.jpg");
+    margin: 12% auto;
+    text-align: center;
+    padding: 20px 0px;
+    color: #fff;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.input-box {
+    margin: 21px auto;
+    width: 80%;
+    border-bottom: 1px solid #9c4545;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.input-box input {
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.gender-box i {
+    color: #fff;
+    text-align: left;
+    margin-left: -25px;
+}
+
+.input-box .fa {
+    color: #fff;
+}
+
+.gender-box span {
+    margin-left: -10px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.gender-box input {
+    margin-left: 40px;
+}
+
+label {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.input-box select {
+    color: #ccc;
+    width: 90%;
+    outline: none;
+    background:transparent;
+    border: none;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+.eye {
+    position: absolute;
+}
+
+#hide1 {
+    display: none;
+}
+
+#hide1, #hide2 {
+    margin-left: -12px;
+    cursor: pointer;
+}
+
+#hide3 {
+    display: none;
+}
+
+#hide3, #hide4 {
+    margin-left: -12px;
+    cursor: pointer;
+}
+
+.login-btn {
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    background-color: #00ad5f;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.login-btn:hover {
+    background-color: #333333;
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin: 0;
+        background: #fff;
+    }
+    .margin {
+        margin: 0;
+    }
+    .input-box #user {
+        color: #fff;
+        margin-right: 0;
+    }
+    .gender-box input {
+        margin-left: 18px;
+    }
+    .form-box {
+        width: 400px;
+    }
+}
+  
+
+
+
+
+
+
+
+.popup {
+    display: none; /* Hidden by default */
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    transition: transform 0.3s;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    animation: fadeIn 0.5s;
+    padding: 20px; /* Add some padding for content */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+    width: 80%; /* Optional: Set a width */
+    max-width: 400px; /* Optional: Set a maximum width */
+}
+/* Popup content */
+.popupContent {
+    background-color: #100b0b;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s;
+    border-radius: 10px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(68, 191, 23);
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+li {
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+   
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

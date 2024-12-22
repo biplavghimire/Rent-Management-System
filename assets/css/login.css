@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+body{
+	background-size: red;
+	background-position: center;
+}
+
+.container{
+	margin: 10px 30px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	/*background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01e4);*/
+	background:linear-gradient( rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.5)100%),url("../images/loginn.jpg");
+	background-size: cover;
+}
+
+.margin{
+	padding: 1px 0;
+}
+
+.form-box{
+	width: 500px;
+	/*background: rgba(0,0,0,0.6);*/
+	background:linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url("../images/loginn.jpg");
+	margin: 12% auto;
+	text-align: center;
+	padding: 30px 0px;
+	color: #fff;
+	box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+}
+
+.input-box{
+	margin: 21px auto;
+	width: 80%;
+	border-bottom: 1px solid #fff;
+	padding-top: 5px;
+	padding-bottom: 0px;
+
+}
+
+.input-box input{
+	width: 90%;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #fff;
+}
+
+#invalidpass{
+	color: red;
+	background-color: rgb(201, 169, 169);
+	width: auto;
+}
+
+.input-box select{
+	color: #ccc;
+	width: 90%;
+	outline: none;
+	background:transparent;
+	border: none;
+}
+
+::placeholder{
+	color: #ccc;
+}
+.fa{
+	margin-right: 10px;
+}
+
+.eye{
+	position: absolute;
+}
+
+#hide1{
+	display: none;
+}
+
+#hide1, #hide2{ 
+	cursor: pointer;
+}
+
+.login-btn{
+	margin: 40px auto 20px;
+	width: 80%;
+	display: block;
+	outline: none;
+	padding: 10px 0;
+	border: 1px solid #fff;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+	background-color: #00ad5f;
+	transition: all 0.4s; 
+	/*background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01e4);*/
+}
+.login-btn:hover{
+	background: #333333;
+}
+
+
+@media (max-width: 800px){
+	.container{
+		margin: 0;
+		background: #fff;
+	}
+	.margin{
+		margin: 0;
+
+	}
+	.form-box{
+		width: 400px;
+	}
+}
+
+
+
+
+
+.popup {
+           
+	 display: none; /* Hidden by default */
+	 position: absolute; 
+     left: 50%;
+     top: 50%;
+	 transform: translate(-50%, -50%); /* Center the popup */
+	 transition: transform 0.3s;
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+	 justify-content: center;
+	 align-items: center;
+	 animation: fadeIn 0.5s;
+	 padding: 20px; /* Add some padding for content */
+     border-radius: 10px; /* Optional: Rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+	 width: 80%; /* Optional: Set a width */
+	 max-width: 400px; /* Optional: Set a maximum width */
+}
+	 
+  .popup-content {
+	  background-color: #d12222;
+	  margin: auto;
+	  padding: 20px;
+	  border: 1px solid #1c7a14;
+	  width: 80%;
+	  color: rgb(0, 0, 0);
+	  max-width: 600px;
+	  position: relative;
+  }
+
+  .close {
+	  position: absolute;
+	  right: 10px;
+	  top: 10px;
+	  color: #e91919;
+	  font-size: 28px;
+	  font-weight: bold;
+  }

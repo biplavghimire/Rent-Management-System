@@ -1,0 +1,284 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.sidebar{
+	width: 345px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: #00ad5f;
+	z-index: 100%;
+	transition: width 300ms;
+}
+.sidebar-brand{
+	height: 98px;
+	padding: 1rem 0rem 1rem 0rem;
+	color: #fff;
+}
+.sidebar-brand span{
+	display: inline-block;
+	padding-right: 1rem;
+}
+
+.sidebar-menu{
+	margin-top: 1rem;
+}
+
+.sidebar-menu li{
+	width: 100%;
+	margin-bottom: 1.3rem;
+	padding-left: 2rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.sidebar-menu a{
+	padding-left: 1rem;
+	display: block;
+	color: #fff;
+	font-size: 1.1rem;
+}
+
+.sidebar-menu a.active{
+	background-color: #fff;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: #00ad5f;
+	border-radius: 30px 0px 0px 30px;
+}
+
+.sidebar-menu a.logout{
+	background-color: #fff;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: black;
+	border-radius: 30px 0px 0px 30px;
+}
+
+.sidebar-menu a span:first-child{
+	padding-right: 1rem;
+	font-size: 1.5rem;
+}  
+
+#nav-toggle:checked + .sidebar{
+	width: 70px;
+}
+
+#nav-toggle:checked + .sidebar .sideber-brand,
+#nav-toggle:checked + .sidebar li{
+	padding-left: 1rem;
+	text-align: center;
+}
+
+#nav-toggle:checked + .sidebar li a{
+	padding-left: 0rem;
+}
+
+#nav-toggle:checked + .sidebar .sideber-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child{
+	display: none;
+}
+
+
+#nav-toggle:checked ~ .main-content{
+	margin-left: 70px;
+}
+
+
+#nav-toggle:checked ~ .main-content header{
+	width: calc(100% - 70px);
+	left: 70px;
+	
+}
+
+
+.main-content{
+	transition: margin-left 300ms;
+	margin-left: 345px;
+	background-color: #f1f5f9;
+	background-size: cover;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	position: fixed;
+	left: 345px;
+	width: calc(100% - 345px);
+	top: 0;
+	background-color: #00ad5f;
+	z-index: 100;
+	transition: left 300ms;
+}
+#nav-toggle{
+	display: none;
+
+}
+
+header h2{
+	color: #fff;
+}
+
+header label span{
+	font-size: 1.7rem;
+	padding-right: 1rem;
+}
+
+.search-wrapper{
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	overflow-x: hidden;
+	background-color: #fff;
+}
+
+.search-wrapper span{
+	display: inline-block;
+	padding: 0rem 1rem;
+	font-size: 1rem;
+	color: #999;
+
+}
+
+.search-wrapper input{
+	height: 100%;
+	padding: .5rem;
+	border: none;
+	outline: none;
+}
+
+.user-wrapper{
+	display: flex;
+	align-items: center;
+}
+
+.user-wrapper img{
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.user-wrapper h4{
+	color: #fff;
+}
+
+.user-wrapper small{
+	display: inline-block;
+	color: lightgrey;
+}
+
+main{
+	margin-top: 85px;
+	padding-left: 2rem 1.5rem;
+	min-height: calc(100vh - 90px);
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+	
+}
+
+.card-single{
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 50px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 2px;
+
+}
+
+.card-single div:last-child span{
+	font-size: 3rem;
+	color: #333;
+
+}
+
+.card-single div:first-child span{
+	color: grey;
+}
+
+.card-single:last-child{
+	background-color: #333;
+}
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child span,
+.card-single:last-child div:last-child span{
+	color: #fff;
+}
+
+@media only screen and (max-width: 1100px){
+	.sidebar{
+		width: 70px;
+	}
+
+	sidebar .sideber-brand,
+	.sidebar li{
+		padding-left: 1rem;
+		text-align: center;
+	}
+
+	.sidebar li a{
+		padding-left: 0rem;
+	}
+
+	.sidebar .sideber-brand h2 span:last-child,
+	.sidebar li a span:last-child{
+		display: none;
+	}
+
+
+	.main-content{
+		margin-left: 70px;
+	}
+
+
+	.main-content header{
+		width: calc(100% - 70px);
+		left: 70px;
+		
+	}
+
+}
+@media only screen and (max-width: 775px){
+	.search-wrapper{
+		display: none;
+	}
+	.card-single{
+		margin-right: 20px;
+		margin-left: 20px;
+		
+
+	}
+}
+@media only screen and (max-width: 540px){
+	.search-wrapper{
+		display: none;
+	}
+	.cards{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.card-single{
+		margin-top: 10px
+	}
+}
+
+
+
+

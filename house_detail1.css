@@ -1,0 +1,105 @@
+/*--------------header-------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.nav-bar{
+	background-color: #00ad5f;;
+}
+.logo{
+	float: left;
+	width: 30%;
+	color: #fff;
+	line-height: 50px;
+	font-size: 36px;
+	padding: 0 20px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#pad button{
+	background-color: #00ad5f;
+	color: #fff;
+}
+
+#pad button:hover{
+	background-color: #333333;
+	color: #fff;
+}
+
+.menu-right{
+	text-align: right;
+}
+#menu li a{
+	text-decoration: none;
+	color: #fff;
+
+
+}
+#menu li{
+	display: inline-block;
+	margin: 10px;
+
+}
+
+#menu #username{
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+
+#menu #username i{
+	font-size: 30px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+
+}
+
+#menu li a:hover{
+	background: #333333;
+
+	/*background: #c9f069;*/
+	/*color: #6c6e67;*/
+	color: #fff;
+	transition: 0.5s;
+	padding: 0 20px;
+}
+
+.container{
+	margin: 20px 100px;
+}
+.container .headline{
+	border: 1px solid black;
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	padding: 20px;
+	font-style: italic;
+
+}
+img{
+	max-width: 100%;
+	max-height: 100px;
+	/*background: lightblue;
+	background: radial-gradient(white 30%, lightblue 70%); */
+
+}
+h5 .fa{
+	font-size: 16px;
+	padding-right: 7px;
+	color: #555;
+}
+.card-title .font{
+	font-size: 14px;
+	color: green;
+}
+h5 .font1{
+	color: #555;
+	font-size: 16px;
+}
+.card{
+	margin-bottom: 40px;
+}
+
+
